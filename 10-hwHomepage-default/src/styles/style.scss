@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap');
+@import 'var.scss';
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: $font-family;
+  color: $text-color;
+  font-weight: 300;
+}
+
+.section {
+  background-color: $bg-color;
+  min-height: 100px;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 110px;
+  padding-bottom: 120px;
+}
+
+.title {
+  text-transform: uppercase;
+}
+
+.line {
+  background: $second-color;
+  width: 45px;
+  height: 4px;
+  margin: 21px auto;
+}
+
+.subtitle {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 42px;
+  margin-bottom: 65px;
+}
+
+.wrap {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.cart-wrap {
+  position: relative;
+
+  &:hover .foto {
+    transform: rotate3d(1, 1, 1, 180deg);
+  }
+
+  &:hover .backface {
+    transform: rotate3d(0, 1, 1, 0deg);
+  }
+}
+
+.foto {
+  width: 270px;
+  height: 270px;
+  transition: transform 1s;
+  backface-visibility: hidden;
+
+  &_2 {
+    background-image: url(../img/2.jpg);
+  }
+
+  &_3 {
+    background-image: url(../img/3.jpg);
+  }
+
+  &_4 {
+    background-image: url(../img/4.jpg);
+  }
+}
+.backface {
+  width: 270px;
+  height: 270px;
+  background-color: $bg-color-hover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate3d(10,1,1, 180deg);
+  backface-visibility: hidden;
+  transition: transform 1s;
+}
+
+.cart__icons {
+  display: flex;
+  justify-content: center;
+}
+
+.cart__icon-link {
+  display: inline-block;
+  margin: 113px 3px;
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+  line-height: 42px;
+  width: 42px;
+  height: 42px;
+  background-color: rgba(#fff, 0.3);
+  &:hover i {
+    text-shadow: 0 0 3px #1870dc, 0 0 15px #fff;
+  }
+}

@@ -1,0 +1,118 @@
+.blog {
+  background-color: #b07cf7;
+  // height: 864px;
+
+  &__container {
+    width: 1200px;
+    margin: 0 auto;
+    color: #fff;
+    text-align: center;
+  }
+
+  &__title {
+    padding-top: 100px;
+    padding-bottom: 30px;
+
+  }
+  &__subtitle {
+    width: 600px;
+    padding: 15px;
+    margin: 0 auto;
+  }
+
+  &__cards {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+
+  &__card {
+    width: 30%;
+    height: 310px;
+    margin-bottom: 10px;
+    margin-top: 50px;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+
+      &:hover {
+        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.5);
+      }
+
+      &-date {
+        width: 60px;
+        height: 60px;
+        margin-top: 30px;
+        margin-left: 30px;
+        background: #0007;
+        line-height: 1;
+        border-radius: 4px;
+        font-size: 32px;
+        text-transform: uppercase;
+        font-weight: 700;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      &-month {
+        font-size: 21px;
+      }
+
+      &-title {
+        width: 90%;
+        margin: 110px 5% 25px 5%;
+        font-size: 20px;
+        font-weight: 700;
+        text-align: left;
+      }
+
+      &-autor {
+        font-size: 13px;
+        font-weight: 700;
+        text-align: left;
+        margin-left: 5%;
+      }
+  }
+
+  &__card-1 {
+    background: linear-gradient(to top, #000d, #fff0 50%), url(../img/blog-1.jpg);
+    background-position: center;
+  }
+
+  &__card-2 {
+    background-image: linear-gradient(to top, #000d, #fff0 50%), url(../img/blog-2.jpg);
+    background-position: bottom;
+  }
+
+  &__card-3 {
+    background-image: linear-gradient(to top, #000d, #fff0 50%), url(../img/blog-3.jpg);
+    background-position: center;
+  }
+  &__button {
+    background-color: #f72b3b;
+    width: 200px;
+    height: 55px;
+    margin-bottom: 100px;
+    border: none;
+    color: #fff;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+    &:hover {
+      box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.5);
+    }
+  }
+}
+
+Vitaliy,
+[17.12.20 20:22] &__toggle,
+&__btn {
+  display: none;
+}
+
+&__btn {
+  padding: 28px 20px;
+
+  @include _768 {
+    display: block;
+  }
+}

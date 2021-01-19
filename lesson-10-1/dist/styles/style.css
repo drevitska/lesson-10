@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Raleway:wght@400;500&family=Roboto:wght@900&display=swap");
+.blog {
+  background-color: #b07cf7;
+}
+.blog__container {
+  width: 1200px;
+  margin: 0 auto;
+  color: #fff;
+  text-align: center;
+}
+.blog__title {
+  padding-top: 100px;
+  padding-bottom: 30px;
+}
+.blog__subtitle {
+  width: 600px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.blog__cards {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.blog__card {
+  width: 30%;
+  height: 310px;
+  margin-bottom: 10px;
+  margin-top: 50px;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+}
+.blog__card:hover {
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.5);
+}
+.blog__card-date {
+  width: 60px;
+  height: 60px;
+  margin-top: 30px;
+  margin-left: 30px;
+  background: #0007;
+  line-height: 1;
+  border-radius: 4px;
+  font-size: 32px;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.blog__card-month {
+  font-size: 21px;
+}
+.blog__card-title {
+  width: 90%;
+  margin: 110px 5% 25px 5%;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: left;
+}
+.blog__card-autor {
+  font-size: 13px;
+  font-weight: 700;
+  text-align: left;
+  margin-left: 5%;
+}
+.blog__card-1 {
+  background: linear-gradient(to top, #000d, #fff0 50%), url(../img/blog-1.jpg);
+  background-position: center;
+}
+.blog__card-2 {
+  background-image: linear-gradient(to top, #000d, #fff0 50%), url(../img/blog-2.jpg);
+  background-position: bottom;
+}
+.blog__card-3 {
+  background-image: linear-gradient(to top, #000d, #fff0 50%), url(../img/blog-3.jpg);
+  background-position: center;
+}
+.blog__button {
+  background-color: #f72b3b;
+  width: 200px;
+  height: 55px;
+  margin-bottom: 100px;
+  border: none;
+  color: #fff;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+  font-size: 20px;
+}
+.blog__button:hover {
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 90px;
+  font-weight: 700;
+}
+
+.subtitle {
+  font-weight: 300;
+  font-style: 17px;
+}
